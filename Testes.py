@@ -1,1 +1,2 @@
-print("Testando github")
+nome = 'juliano'
+print(type(nome))
