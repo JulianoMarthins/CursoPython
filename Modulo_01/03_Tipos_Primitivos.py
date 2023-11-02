@@ -14,6 +14,7 @@
 
 """
 
+print('\n')
 print('Exemplo de números inteiros: ')
 print(11, -11, 0)
 num = 0
@@ -40,4 +41,6 @@ print(type(texto))
 print(10 == 10) # Retorna True, confirmando que dez é igual a dez
 print(10 == 11) # Retorna False, confirmando que dez não é igual a onze
 print(type(10 == 10))
+
+print('\n')
 

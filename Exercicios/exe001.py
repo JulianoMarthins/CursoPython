@@ -6,7 +6,7 @@ print('\n')
 nome = 'Juliano'
 sobrenome = 'Martins'
 idade = 41
-ano_nascimento = 1982
+ano_nascimento = 2023 - 41
 maior_idade = 41 >= 18
 altura = 1.96
 

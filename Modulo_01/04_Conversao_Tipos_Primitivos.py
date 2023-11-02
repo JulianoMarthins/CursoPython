@@ -3,6 +3,7 @@
 
     Este é o ato de converter um tipo primitivo para outro tipo primitivo
 """
+print('\n')
 
 # O uso do sinal de + para números inteiros tem comportamento do uso do mesmo sinal para strings
 print(1 + 4) # Retorna 5
@@ -36,3 +37,4 @@ print(float('778')) # converte uma string para um número float
 
 # caso tente converter um valor string de texto para números o compilador será interrompido e finalizara o programa com um erro
 
+print('\n')

@@ -16,7 +16,7 @@
     nome_variavel = 'valor'
 
 """
-print('\n\n')
+print('\n')
 
 
 # A variavel guarda um valor e pode ser utilizada em outras cituações
@@ -42,7 +42,7 @@ print(nome, sobrenome)
 maior_idade = 46 >= 18 # Retorna um valor boleano, neste caso, como 46 é maior que 18, ele retornará True
 print(f'Pessoa é maior de idade? {maior_idade}')
 
-print('\n\n')
+print('\n')
 
 
 

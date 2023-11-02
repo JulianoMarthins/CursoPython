@@ -1,3 +1,5 @@
+print('\n')
+
 # Imprime na tela os números 12 e 34
 print(12, 34)
 
@@ -26,3 +28,5 @@ print('Não pulou a linha')
 
 print(42, 37, end='##\n')
 print("Agora pulamos a linha")
+
+print('\n')

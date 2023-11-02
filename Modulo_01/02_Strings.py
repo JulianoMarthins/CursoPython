@@ -29,6 +29,8 @@
     futura no código
 
 """
+print('\n')
+
 # retorna o tipo primitivo da variavel teste, neste caso, int
 teste = 1234 
 print(type(teste)) 
@@ -43,3 +45,5 @@ print(type(teste))
 # dupas
 
 print('A plavra em "MAIUSCULO" está entre aspas duplas')
+
+print('\n')
