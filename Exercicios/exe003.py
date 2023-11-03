@@ -18,16 +18,22 @@
 """
 print('\n')
 
-nome = input('Insira se nome: ') or 'Você não digitou seu nome'
+nome = input('Insira se nome: ')
+print()
 
 if nome: 
-    print('Nome: ', nome)
-    print('Nome invertido: ', nome[::-1])
-    print('Quantide de caracteres com espaços: ', len(nome))
-    nome_sem_espaços = nome.replace(' ', '')
-    print('Quantidade de caracteres sem espaços: ', len(nome_sem_espaços) )
-    print('Primeira letra do seu nome: ', nome[0])
-    print('Última letra do seu nome: ', nome[1])
+    print('Nome:', nome)
+    print('Nome invertido:', nome[::-1])
+    if ' ' in nome:
+        print('\nSeu nome contém espaços')
+        print('Quantide de caracteres com espaços:', len(nome))
+        nome_sem_espaços = nome.replace(' ', '')
+        print('Quantidade de caracteres sem espaços:', len(nome_sem_espaços) )
+    else:
+        print('\nSeu não contém espaços')
+        
+    print('\nPrimeira letra do seu nome:', nome[0])
+    print('Última letra do seu nome:', nome[1])
 
 else:
     print('Não pode deixar este campo vazio')
