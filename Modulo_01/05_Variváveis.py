@@ -15,6 +15,20 @@
 
     nome_variavel = 'valor'
 
+    Em python, todas as variaveis podem ser alteradas a qualquer momento do programa, isso pode ser perigoso porque,
+    pode haver alguma alteração por acidente em algum trecho do código quando o programa está muito grande.
+
+    Em algumas linguagens de programação temos a palavra reservada final, o compilador lança um erro caso tu tente alterar
+    uma variavel definida como final.
+
+    Infelizmente, pelo fato do Python ser uma linguagem de tipagem dinâmica, este recurso não existe na linguagem, para
+    resolver este problema, o PEP8 solicita em sua conversão, que, como já citado, todas as varivais sejam escritas com
+    todas as letras maíusculas, já, variaveis que o programador não quer que sejam alteradas, é criada uma variavel com todas
+    as letras maíusculas, dificultado assim, alterações acidentais dos valores dessas variaveis. 
+
+    Este recurso é uma excelente saída pra o problema gerado pela falta da possibilidade de definir uma variavel não alteravel, 
+    o nome dado a esta seria contante, variavel constante, ela pode ser alterada normalmente mas.
+
 """
 print('\n')
 

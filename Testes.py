@@ -1,4 +1,5 @@
-numero_str = input('Digite um número: ')
+num = '10.2'
 
-print(numero_str.isdigit()) #  Retorna um valor booleano, verifica se a string pode ser convertida para números
+teste = num.isdigit()
 
+print(teste)

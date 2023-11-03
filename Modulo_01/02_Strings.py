@@ -39,7 +39,7 @@ print(type(teste))
 teste = '1234'
 print(type(teste)) 
 
-# A convenção do pytho pede que use aspas simples, porque, no texto, caso seja
+# A convenção do python pede que use aspas simples, porque, no texto, caso seja
 # necessario colocar aspas em uma palavra, deve ser contrarária a aspas da string
 # ou seja, se aberto a string com aspas simples, a palavra em destaque terá aspas
 # dupas
