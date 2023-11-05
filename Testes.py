@@ -1,5 +1,5 @@
-num = '10.2'
+nome = 'larissas grinfer'
 
-teste = num.isdigit()
+nome = nome.
 
-print(teste)
+print(nome)
