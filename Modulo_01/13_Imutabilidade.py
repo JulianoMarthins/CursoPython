@@ -22,6 +22,7 @@ print('\n')
 # afirmar isso em aula, e em outras linguagens que estudei como Java, no caso de Python, com o conhecimento que tenho hoje
 # ela se encaixaria mais em tuplo pois, apensar de tuplas e listas serem identicos, o conceito em que elas mais de diferenciam
 # é justamente a imutabilidade contida nas tuplas.
+
 nome_linguagem = 'Java'
 # Mesmo após definir o valor da variável, este pode ser alterado conforme necessidade do programador
 nome_linguagem = 'Python'
