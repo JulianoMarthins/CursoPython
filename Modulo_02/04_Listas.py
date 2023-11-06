@@ -42,3 +42,4 @@ print(numeros)
 # Apaga o ultimo elemento da lista
 numeros.pop()
 print(numeros)
+.
