@@ -1,8 +1,7 @@
-print('\n')
 
-print('\033[1;34mJuliano Martins de Souza\033[m')
-
-
+def soma(x, y):
+    return x + y
 
 
-print('\n')
+soma = soma(5, 4)
+print(soma)

@@ -23,6 +23,8 @@
     Vejamos abaixo alguns exemplos de códigos usando listas
 """
 
+
+
 # O jeito mais comum de declararmos uma lista é utilizando colchetes
 numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 print(numeros)
@@ -42,4 +44,21 @@ print(numeros)
 # Apaga o ultimo elemento da lista
 numeros.pop()
 print(numeros)
-.
+
+# Adiciona o valor ao final da lista, pode ser misturados tipos primitivos nas listas
+numeros.append('BBB')
+print(numeros)
+
+# insere o valor 5 no index 1
+numeros.insert(1, 5)
+print(numeros)
+
+# Exemplo de for para percorrer todos os elementos da lista
+for x in numeros:
+    print(x)
+
+# Apagará toda sua lista
+numeros.clear()
+
+# Lista vazia
+print(numeros)
