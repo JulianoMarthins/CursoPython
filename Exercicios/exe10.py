@@ -2,9 +2,10 @@ from random import choice
 from time import sleep
 import os
 
-print('\n') # Trecho de código apenas para dar espaçamento nas informações do VSCODE
+# Trecho de código para dar espaçamento entre o programa e as notificações do VSCode
+print('\n')
 
-# função para menu de escolha das categorias de jogo => Recebe categoria_jogo, retorna palavra_secreta
+# Função de seleção das categorias das palavras secretas do jogo
 def menu_escolha(categoria_jogo):
     while True:
         escolha = input(categoria_jogo)        
@@ -14,7 +15,7 @@ def menu_escolha(categoria_jogo):
             match num:
                 case 1:
                     
-                    print("Você escolheu\nTIMES DE FUTEBOL\n\n")
+                    print("Você escolheu\n\033[1;34mTIMES DE FUTEBOL\033[m\n\n")
                     print('Palavra secreta selecionada:\nBoa sorte\n')
                     sleep(0.5)
                     lista = [ 'AMERICA', 'ATLETICO', 'BAHIA', 'BOTAFOGO', 'CORINTHINS', 'CORITIBA', 'CRUZEIRO', 'CUIABA','FLAMENGO',
@@ -25,7 +26,7 @@ def menu_escolha(categoria_jogo):
                     return choice(lista)
                 
                 case 2:                    
-                    print("Você escolheu\nCIDADES BRASILEIRAS\n\n")
+                    print("Você escolheu\n\033[1;34mCIDADES BRASILEIRAS\033[m\n\n")
                     print('Palavra secreta selecionada:\nBoa sorte\n')
                     sleep(0.5)
                     
@@ -36,7 +37,7 @@ def menu_escolha(categoria_jogo):
                     return choice(lista)
                 
                 case 3:                    
-                    print("Você escolheu\nBANDAS NASCIONAIS\n\n")
+                    print("Você escolheu\n\033[1;34mBANDAS NASCIONAIS\033[m\n\n")
                     print('Palavra secreta selecionada:\nBoa sorte\n')
                     sleep(0.5)
 
@@ -48,7 +49,7 @@ def menu_escolha(categoria_jogo):
                     return choice(lista)
                 
                 case 4:                    
-                    print("Você escolheu\nMARCAS DE CARRO\n\n")
+                    print("Você escolheu\n\033[\;34mMARCAS DE CARRO\033[m\n\n")
                     print('Palavra secreta selecionada:\nBoa sorte\n')
                     sleep(0.5)
 
@@ -66,23 +67,23 @@ def menu_escolha(categoria_jogo):
                 
 
 # Variavel recebe String com regras para informar o jogardor
-regras = """
+regras = """\033[0;34m
                     Jogo de palavras secretas
 
                          Regras do jogo
 
-        1° Palavra não terá caracteres especiais como acentos, ç, etc...
-        2° Espaços são caracteres válidos
-        3° Só é permitido inserir um caracter por jogada
-        4° Você selecionará a categoria que deseja jogar
-        5° Você terá cinco vidas
+        1°  Palavra não terá caracteres especiais como acentos, ç, etc...
+        2°  Espaços são caracteres válidos
+        3°  Só é permitido inserir um caracter por jogada
+        4°  Você selecionará a categoria que deseja jogar
+        5°  Você terá cinco vidas
 
                              Boa sorte
-        
+\033[m        
 """
 
 # Menu de seleção das categorias de palavras secretas
-categoria_jogo = """
+categoria_jogo = """\033[0;34m
 
             Escolha sua categoria de palavras para jogar
 
@@ -90,7 +91,7 @@ categoria_jogo = """
         2   =>  Cidades brasileiras
         3   =>  Bandas nacionais
         4   =>  Marca de carros
-
+\033[m
 """
 
 
@@ -122,7 +123,7 @@ while condicao_while == 0:
         if letra in letra_secreta:
             sleep(0.7)
             letras_acertadas += letra       
-    print(f'\nAcertou\nVidas: {vidas}\n')
+    print(f'\n\033[1;32mAcertou\033[m\nVidas: {vidas}\n')
       
 
                           
@@ -135,20 +136,56 @@ while condicao_while == 0:
         else:
             print('#', end='')
         
-            
-    
+  
+    # Consome uma vida do usuário caso ele erre alguma letra, finaliza o jogo se não tiver mais vidas
+    if letra not in palavra_secreta:
+        vidas -= 1
+        sleep(0.7)
+        print(f'\n\033[1;31mVocê errou\033[m\nVidas: {vidas}\n')
+        
+        if vidas == 0:
+            print(f'\n\033[1;31mVOCÊ PERDEU\033[m')
+
+            while True:
+                op = input('\n\nDeseja jogar novamente?\n[S]sim [N]não: ').upper()
+
+                if 'S' in op:                                  
+                    sleep(0.7)
+                    letras_acertadas = ' '
+                    vidas = 5
+                    palavra_secreta = menu_escolha(categoria_jogo=categoria_jogo)
+                    print('Jogo Reiniciando')
+                    sleep(0.7)
+                    break
+                    
+                
+                elif 'N' in op:
+                    print('\nObrigado por jogar\nEcenrrando programa')
+                    sleep(0.7)
+                    condicao_while = 1
+                    break
+                
+                else:
+                    print("Digite [S] para continuar\nDigite [N] para encerrar o programa")
 
     # Verificação de vitória
-    if (len(letras_acertadas) - 1) == len(palavra_secreta):
+    espacos = palavra_secreta.count(' ')
+    if espacos > 0:
+        tot_letras = len(letras_acertadas) - espacos
+    else:
+        tot_letras = len(letras_acertadas)
+    
+    
+    if tot_letras == len(palavra_secreta):
         sleep(0.7)         
-        print("\n\nPARABÉNS\nVocê venceu")
+        print("\n\n\033[1;32mPARABÉNS\033[m\nVOCÊ \033[1;32mVENCEU\033[m")
         
         while True:
                 op = input('\n\nDeseja jogar novamente?\n[S]sim [N]não: ').upper()
 
                 if 'S' in op:                                  
                     sleep(0.7)
-                    letras_acertadas = ''
+                    letras_acertadas = ' '
                     vidas = 5
                     palavra_secreta = menu_escolha(categoria_jogo=categoria_jogo)
                     print('Jogo Reiniciando')
@@ -165,35 +202,6 @@ while condicao_while == 0:
                     print("Digite [S] para continuar\nDigite [N] para encerrar o programa")
                 
         
-    # Consome uma vida do usuário caso ele erre alguma letra, finaliza o jogo se não tiver mais vidas
-    if letra not in palavra_secreta:
-        vidas -= 1
-        sleep(0.7)
-        print(f'\nVocê errou\nVidas: {vidas}\n')
-        
-        if vidas == 0:
-            print(f'\nVocê Perdeu\nVidas: {vidas}')
-
-            while True:
-                op = input('\n\nDeseja jogar novamente?\n[S]sim [N]não: ').upper()
-
-                if 'S' in op:                                  
-                    sleep(0.7)
-                    letras_acertadas = ''
-                    vidas = 5
-                    palavra_secreta = menu_escolha(categoria_jogo=categoria_jogo)
-                    print('Jogo Reiniciando')
-                    sleep(0.7)
-                    break
-                    
-                
-                elif 'N' in op:
-                    print('\nObrigado por jogar\nEcenrrando programa')
-                    sleep(0.7)
-                    condicao_while = 1
-                    break
-                
-                else:
-                    print("Digite [S] para continuar\nDigite [N] para encerrar o programa")
+    
 
 print('\n') # Trecho de código apenas para dar espaçamento nas informações do VSCODE
