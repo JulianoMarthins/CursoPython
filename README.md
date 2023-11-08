@@ -1,4 +1,4 @@
-# Python_Impressionador
+# Python Impressionador By JulianoMarthins
 
 Durante a faculdade foi necessário realizar cursos extras para me ajudar a entender a lógica de programação, assim, realizei o curso de Python do Gustavo Guanabara, finalizando os três mundos disponíveis até então.
 
