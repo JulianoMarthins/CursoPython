@@ -16,14 +16,15 @@ nome = int(321)
 print(nome)
 
 """
-    Você só pode converter um tipo primitivo para outro tipo primitivo que aceite o valor que está sendo tentando converter
-    Por exemplo, não podemos converter uma string 'teste' para um valor int, float ou bool, mas a string '321' pode ser convertida
-    para números inteiros e ou float
-    Conversão de números inteiros para float, será acrescentando uma casa decimal zerada, por exemplo, ao converter um número
-    inteiro 15 para float, retornará 15.0
+        Você só pode converter um tipo primitivo para outro tipo primitivo que aceite o valor que está sendo tentando 
+    converter.
+        Por exemplo, não podemos converter uma string 'teste' para um valor int, float ou bool, mas a string '321' pode 
+    ser convertida para números inteiros e ou float
+        Conversão de números inteiros para float, será acrescentando uma casa decimal zerada, por exemplo, ao converter
+    um número inteiro 15 para float, retornará 15.0
 
-    Porem precisa ter atenção na conversão de float para int onde, caso seja convertido o valor 19.9 para inteiro, ele receberá
-    o valor 19. Comforme podemos ver abaixo
+        Porem precisa ter atenção na conversão de float para int onde, caso seja convertido o valor 19.9 para inteiro, 
+    ele receberá o valor 19. Conforme podemos ver abaixo
 
 """
 

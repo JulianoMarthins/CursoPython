@@ -2,7 +2,7 @@
     Python é uma linguagem de programação de tipagem dinâmica e forte
     Todas as linguagens de programação tem um estilo de tipagem, a dinâmica faz com
     que o python 'Deduza' o tipo de dado passado como argumento para a função print
-    ou variaveis. 
+    ou variáveis.
 
     Strings nada mais é do que textos, dados com uso de caracteres, onde o mesmo pode
     ser números, caso este seja tratado como string, não pode ser realizado calculos
@@ -14,11 +14,11 @@
     de número, e o mesmo iniciar com zero, a linguagem eliminará o zero deixando o CPF
     do cliente incompleto
 
-    O codigo de String em python é str, e sempre deve estar entre aspas simples, a 
+    O código de String em python é str, e sempre deve estar entre aspas simples, a
     linguagem aceita o uso de aspas duplas porem, por convenção, se usa aspas simples.
 
     Neste texto que está lendo agora, ele está entre três aspas duplas, também pode
-    ser feito em três aspas simpes, este formato também é uma string mas a convenção
+    ser feito em três aspas simples, este formato também é uma string mas a convenção
     é a ser usado para realizar a documentação, explicando o programa ou uma função
     em específico.
 

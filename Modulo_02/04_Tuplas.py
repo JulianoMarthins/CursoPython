@@ -1,9 +1,11 @@
 """
                                 Intrudução a tuplas
 
-    Se falarmos em metódos e teorias de uso, tudo o que aprendemos nas aulas ateriores sobre listas se aplica em tupla.
-    A grande diferença é que, em tuplas, uma vez que definida, não pode ser alterada os valores já adicionados a ela.
-    Você pode adicionar ou remover valores, mas jamais alteralos
+        Se falarmos em metódos e teorias de uso, tudo o que aprendemos nas aulas ateriores sobre listas se aplica em
+    tupla.
+        A grande diferença é que, em tuplas, uma vez que definida, não pode ser alterada os valores já adicionados
+    a ela.
+        Você pode adicionar ou remover valores, mas jamais alteralos
 
 """
 print()

@@ -16,6 +16,8 @@
     Se nada for digitado:
         Exiba uma mensagem sobre não poder deixar campos vazios
 """
+from typing import Any
+
 print('\n')
 
 nome = input('Insira se nome: ')
@@ -26,8 +28,8 @@ if nome:
     print('Nome invertido:', nome[::-1])
     if ' ' in nome:
         print('\nSeu nome contém espaços')
-        print('Quantide de caracteres com espaços:', len(nome))
-        nome_sem_espaços = nome.replace(' ', '')
+        print('Quantidade de caracteres com espaços:', len(nome))
+        nome_sem_espacos = nome.replace(' ', '')
         print('Quantidade de caracteres sem espaços:', len(nome_sem_espaços) )
     else:
         print('\nSeu não contém espaços')

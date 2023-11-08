@@ -8,17 +8,17 @@
     # Bons sonhoes  =>  00 às 7
 
 """
+from typing import Any
+
 print('\n')
 
 hora = input('Digite a hora: ')
 
-hora = int(hora)
-
-if hora >= 8 and hora <= 11:
+if 8 <= hora <= 11:
     print('Bom dia')
-elif hora >= 12 and hora <= 17:
+elif 12 <= hora <= 17:
     print('Boa tarde')
-elif hora >= 18 and hora <= 23:
+elif 18 <= hora <= 23:
     print('Boa noite')
 else:
     print('Dormindo')

@@ -1,9 +1,9 @@
 """
         Enumerate serve para numerar por indices valores de uma lista
 
-        A finalidade do enumerate é númerar cada valor de uma lista ou dupla, números esses que podemos utilizar como indices
-    para acessar cada elemento quando necessário, o retorno da enumeração será de uma tupla de listas, onde cada lista, contem
-    o indice e o valor dos elementos da lista\ tupla passada como parametro ao método.
+        A finalidade do enumerate é númerar cada valor de uma lista ou dupla, números esses que podemos utilizar como
+    indices para acessar cada elemento quando necessário, o retorno da enumeração será de uma tupla de listas, onde
+    cada lista, contem o indice e o valor dos elementos da lista\ tupla passada como parametro ao método.
 
     
 
@@ -25,9 +25,10 @@ nomes.append('João')
 nomes_numerados = enumerate(nomes)
 print(f'Referência em memória: {nomes_numerados}')
 
-# Se convertermos a para uma lista, o enumerate retornara uma tupla contendo o numeração criada e o valor de cada elemento
+# Se convertermos a para uma lista, o enumerate retornara uma tupla contendo o numeração criada e o valor de cada
+# elemento
 
-# Para fins didáricos, o comando star=19 fará a contagem iniciar no indice 19
+# Para fins didadicos, o comando star=19 fará a contagem iniciar no indice 19
 nomes_numerados = list(enumerate(nomes, start=19))
 print(f'\nTuplas enumeradas: {nomes_numerados}')
 
@@ -49,11 +50,12 @@ for item in nomes_numerados:
 """
 
 
-# Veremos a seguir o modo correto do uso do enumerate com o laço de repetição for, não sendo possivel utilização do mesmo
-# como nas linhas acima porque, ao executar o programa, o enumerate consumirá linhas dos códigos, exemplo:
-# Neste codigo atual, na linha 16, o enumerate consumirá o primeiro valor da varaivel nome, assim, ao chegar na linha 20,
-# o enumerate consumirá as outras duas linhas restantes em nossa lista, causando, no código abaixo, retornando ao usuário
-# a referência de memória e não, os valores da variavel nome. Nesta parte, para testes, vou comentar os códigos acima
+# Veremos a seguir o modo correto do uso do enumerate com o laço de repetição for, não sendo possivel utilização do
+# mesmo como nas linhas acima porque, ao executar o programa, o enumerate consumirá linhas dos códigos, exemplo:
+# Neste código atual, na linha 16, o enumerate consumirá o primeiro valor da varaivel nome, assim, ao chegar na
+# linha 20, o enumerate consumirá as outras duas linhas restantes em nossa lista, causando, no código abaixo,
+# retornando ao usuário a referência de memória e não, os valores da variavel nome. Nesta parte, para testes, vou
+# comentar os códigos acima
 
 print() 
 

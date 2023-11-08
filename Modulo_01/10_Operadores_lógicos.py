@@ -39,8 +39,8 @@ if 'Jul' in nome:
     print('Existe os caracteres, sequenciais "Jul" na palavra Juliano')
 
 if 'Jul' not in nome:
-    print('Perceba que este trecho de código não será executado pois, apesar de ter "Jul" na palavra Juliano, a expressão'
-          + ' está com negação, a leitura seria, "se não tiver Jul em Juliano"')
+    print('Perceba que este trecho de código não será executado pois, apesar de ter "Jul" na palavra Juliano,'
+          + ' a expressão esta com a negação "not", a leitura seria, "se não tiver Jul em Juliano"')
 
 
 # Um uso interessante para o operador or
