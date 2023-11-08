@@ -1,7 +1,3 @@
-
-def soma(x, y):
-    return x + y
+print('Jezuis apaga a luiz')
 
 
-soma = soma(5, 4)
-print(soma)
