@@ -1,3 +1,4 @@
+print('\n')
 
 # Menu do programa
 menu = """
@@ -9,8 +10,6 @@ menu = """
             0 - Sair do programa
 
 """
-print('\n')
-
 
 # Main
 carrinho = []
