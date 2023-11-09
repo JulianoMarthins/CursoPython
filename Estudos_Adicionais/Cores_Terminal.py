@@ -26,5 +26,8 @@ Código      => '\033[style;text;backgroungmTEXTO\033[m'
 
 
 """
+print('\n')
 
-print('\033[1;36mJuliano\033[m')
+print('\033[1;34mJuliano\033[m') # Imprime meu nome na cor azul
+
+print('\n')

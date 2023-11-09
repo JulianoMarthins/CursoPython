@@ -60,5 +60,24 @@ for x in numeros:
 # Apagará toda sua lista
 numeros.clear()
 
+
+"""
+                Reforço de conteúdo
+
+        Para adicionar elementos a lista, você deve usar o comando:
+                .append() e passar no argumento, o valor a adicionar
+
+        Para remover elementos da lista, temos duas funções distintas:
+                .pop() e passar no argumento o indice do valor a remover -> Exemplo -> lista.pop(1)
+                .remove() e passar no argumento o valor a remover -> Exemplo -> lista.remove('Juliano')
+            
+
+"""
+
+if numeros:
+    ...
+else:
+    pass
+
 # Lista vazia
 print(numeros)
