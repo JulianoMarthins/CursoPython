@@ -1,6 +1,6 @@
 """
-    Na aula passada falamos sobre o tipo primitivo String, porem, existem mais tipos
-    primitivos em python
+        Na aula passada falamos sobre o tipo primitivo String, porem, existem mais 
+    tipos primitivos em python
 
     String | str => String são textos, conjuntos de caracteres que devem ser definidos
     dentro de aspas simples
@@ -33,8 +33,9 @@ texto = '3.1'
 print(type(texto))
 
 """
-    Para o tipo primitivo bool, devemos, digamos, questionar o computador sobre uma condição onde o mesmo retornará
-    somente verdadeiro ou falso, não há outra possibilidade de resposta e só pode ser uma das opções.
+        Para o tipo primitivo bool, devemos, digamos, questionar o computador sobre 
+    uma condição onde o mesmo retornará somente verdadeiro ou falso, não há outra 
+    possibilidade de resposta e só pode ser uma das opções.
 
 """
 

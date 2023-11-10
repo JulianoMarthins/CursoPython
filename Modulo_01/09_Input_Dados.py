@@ -1,7 +1,8 @@
 print('\n')
 
-# O código abaixo mostrará a mensagem ao usuário, e o mesmo deverá inserir algum dado e guardar na variavel
-# Seja qual for o tipo de entrada do usuário, o comando input sempre guardará uma String na variavel
+# O código abaixo mostrará a mensagem ao usuário, e o mesmo deverá inserir algum 
+# dado e guardar na variavel. Seja qual for o tipo de entrada do usuário, o comando 
+# input sempre guardará uma String na variavel
 
 # Você pode testar no console, ao inserir dandos, que mesmo passando números
 # o programa armazenará uma string na variavel hoje

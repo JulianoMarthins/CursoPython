@@ -1,5 +1,6 @@
 """
-    Crie as variáveis e defina seus valores, para que seja exibido no colsone os prints solicitados
+        Crie as variáveis e defina seus valores, para que seja exibido no colsone 
+    os prints solicitados
 """
 print('\n')
 

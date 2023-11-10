@@ -1,34 +1,42 @@
 """
-        Variáveis são usadas para salvar informações na memória do computador, em Python, existe uma convenção de boas
-    práticas que padroniza a linguagem chamada de PEP8, ao longo do curso veremos os aspéctos dela.
+        Variáveis são usadas para salvar informações na memória do computador, 
+    em Python, existe uma convenção de boas práticas que padroniza a linguagem 
+    chamada de PEP8, ao longo do curso veremos os aspéctos dela.
 
-        A PEP8 define que, para ser criado uma variável, ela não pode começar com números, deve ser toda com letras
-    minusculas e, quando necessário usar duas palavras, fazer a separação dessas com um underline, não deve ser usado
+        A PEP8 define que, para ser criado uma variável, ela não pode começar com 
+    números, deve ser toda com letras minusculas e, quando necessário usar duas 
+    palavras, fazer a separação dessas com um underline, não deve ser usado
     acento.
     
         O sinal de igual (=) serve para atribuir o valor a direita, a variavel criada
-        Os nomes das variavels devem ter, segundo orientação do PEP8, nome plausivel com o valor contido na mesma,
-    se vai guardar um cpf, o nome da variável deve ser cpf, se foi guardar um nome, a variável deve ser chamar nome.
+        Os nomes das variavels devem ter, segundo orientação do PEP8, nome plausivel 
+    com o valor contido na mesma, se vai guardar um cpf, o nome da variável deve 
+    ser cpf, se foi guardar um nome, a variável deve ser chamar nome.
 
-        A variavel não deve ser criada para diminuir um código mas sim, para deixar o código mais legivel.
+        A variavel não deve ser criada para diminuir um código mas sim, para deixar 
+    o código mais legivel.
 
     Exemplo:
 
     nome_variavel = 'valor'
 
-        Em python, todas as variaveis podem ser alteradas a qualquer momento do programa, isso pode ser perigoso porque,
-    pode haver alguma alteração por acidente em algum trecho do código quando o programa está muito grande.
+        Em python, todas as variaveis podem ser alteradas a qualquer momento do 
+    programa, isso pode ser perigoso porque, pode haver alguma alteração por 
+    acidente em algum trecho do código quando o programa está muito grande.
 
-        Em algumas linguagens de programação temos a palavra reservada final, o compilador lança um erro caso tu tente
-    alterar    uma variavel definida como final.
+        Em algumas linguagens de programação temos a palavra reservada final, o 
+    compilador lança um erro caso tu tente alterar uma variavel definida como final.
 
-        Infelizmente, pelo fato do Python ser uma linguagem de tipagem dinâmica, este recurso não existe na linguagem,
-    para resolver este problema, o PEP8 solicita em sua conversão, que, como já citado, todas as varivais sejam
-    escritas com todas as letras maíusculas, já, variaveis que o programador não quer que sejam alteradas, é criada
-    uma variavel com todas as letras maíusculas, dificultado assim, alterações acidentais dos valores dessas variaveis.
+        Infelizmente, pelo fato do Python ser uma linguagem de tipagem dinâmica, 
+    este recurso não existe na linguagem, para resolver este problema, o PEP8 
+    solicita em sua conversão, que, como já citado, todas as varivais sejam escritas 
+    com todas as letras maíusculas, já, variaveis que o programador não quer que 
+    sejam alteradas, é criada uma variavel com todas as letras maíusculas, 
+    dificultado assim, alterações acidentais dos valores dessas variaveis.
 
-        Este recurso é uma excelente saída pra o problema gerado pela falta da possibilidade de definir uma variavel
-    não alteravel, o nome dado a esta seria contante, variavel constante, ela pode ser alterada normalmente mas.
+        Este recurso é uma excelente saída pra o problema gerado pela falta da 
+    possibilidade de definir uma variavel não alteravel, o nome dado a esta seria 
+    contante, variavel constante, ela pode ser alterada normalmente mas.
 
 """
 print('\n')

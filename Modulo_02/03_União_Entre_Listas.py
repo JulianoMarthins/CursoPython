@@ -12,7 +12,8 @@ lista_b = [4, 5, 6]
 lista_c = lista_a + lista_b
 print(lista_c)
 
-# O comando abaixo não retorna nenhum valor, porem, ela copia os valores da lista passada como argumento
+# O comando abaixo não retorna nenhum valor, porem, ela copia os valores da lista 
+# passada como argumento
 lista_a.extend(lista_b)
 print(lista_a)
 

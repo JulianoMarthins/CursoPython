@@ -19,13 +19,12 @@ def menu_escolha(categoria_jogo):
                     print("Você escolheu\n\033[1;34mTIMES DE FUTEBOL\033[m\n\n")
                     print('Palavra secreta selecionada:\nBoa sorte\n')
                     sleep(0.5)
-                    lista = ['AMERICA', 'ATLETICO', 'BAHIA', 'BOTAFOGO', 'CORINTHINS', 'CORITIBA', 'CRUZEIRO',
-                             'CUIABA', 'FLAMENGO', 'FLUMINENSE', 'FORTALEZA', 'GOIAS', 'GREMIO', 'INTERNACIONAL',
-                             'PALMEIRAS', 'BRAGANTINO',
-                             'SANTOS', 'AVAI', 'CEARA', 'CHAPECOENSE', 'CRICIUMA', 'GUARANI', 'JUVENTUDE', 'LONDRINA',
-                             'SPORT', 'VITORIA',
-                             'FIGUEIRENSE', 'NAUTICO', 'PAYSANDU', 'REMO', 'YPIRANGA', 'VASCO DA GAMA', 'SAO PAULO'
-                             ]
+                    lista = ['AMERICA', 'ATLETICO', 'BAHIA', 'BOTAFOGO', 'CORINTHINS',
+'CORITIBA', 'CRUZEIRO', 'CUIABA', 'FLAMENGO', 'FLUMINENSE', 'FORTALEZA', 'GOIAS',
+'GREMIO', 'INTERNACIONAL', 'PALMEIRAS', 'BRAGANTINO', 'SANTOS', 'AVAI', 'CEARA',
+'CHAPECOENSE', 'CRICIUMA', 'GUARANI', 'JUVENTUDE', 'LONDRINA', 'SPORT', 'VITORIA',
+'FIGUEIRENSE', 'NAUTICO', 'PAYSANDU', 'REMO', 'YPIRANGA', 'VASCO DA GAMA', 'SAO PAULO'
+]
                     return choice(lista)
 
                 case 2:
@@ -33,12 +32,11 @@ def menu_escolha(categoria_jogo):
                     print('Palavra secreta selecionada:\nBoa sorte\n')
                     sleep(0.5)
 
-                    lista = ['BRASILIA', 'SALVADOR', 'FORTALEZA', 'BELO HORIZONTE', 'MANAUS', 'CURITIBA', 'RECIFE',
-                             'GOIANIA', 'BELEM', 'PORTO ALEGRE', 'GUARULHOS', 'CAMPINAS', 'SAO LUIS', 'SAO GONCALO',
-                             'MACEIO', 'DUQUE DE CAXIAS',
-                             'CAMPO GRANDE', 'NATAL', 'JOAO PESSOA', 'NOVA IGUACU', 'SANTO ANDRE', 'CUIABA', 'LONDRINA',
-                             'PORTO VELHO',
-                             'JUIZ DE FORA', 'JOINVILLE', 'FLORIANOPOLIS', 'PELOTAS'
+                    lista = ['BRASILIA', 'SALVADOR', 'FORTALEZA', 'BELO HORIZONTE', 
+'MANAUS', 'CURITIBA', 'RECIFE', 'GOIANIA', 'BELEM', 'PORTO ALEGRE', 'GUARULHOS',
+'CAMPINAS', 'SAO LUIS', 'SAO GONCALO', 'MACEIO', 'DUQUE DE CAXIAS', 'CAMPO GRANDE', 
+'NATAL', 'JOAO PESSOA', 'NOVA IGUACU', 'SANTO ANDRE', 'CUIABA', 'LONDRINA', 
+'PORTO VELHO', 'JUIZ DE FORA', 'JOINVILLE', 'FLORIANOPOLIS', 'PELOTAS'
                              ]
                     return choice(lista)
 
@@ -47,14 +45,13 @@ def menu_escolha(categoria_jogo):
                     print('Palavra secreta selecionada:\nBoa sorte\n')
                     sleep(0.5)
 
-                    lista = ['ANGRA', 'ARNALDO ANTUNES', 'BARAO VERMELHO', 'BIQUINI CAVADAO', 'CACHORRO GRANDE',
-                             'CAPITAL INICIAL', 'CASCAVELLETES', 'CASSIA ELLER', 'CAZUZA', 'CHARLIE BROWN', 'CPM 22',
-                             'DETONAUTAS', 'FREJAT', 'IRA',
-                             'JOTA QUEST', 'KID ABELHA', 'LEGIAO URBANA', 'LOS HERMANOS', 'LOBAO', 'LULU SANTOS',
-                             'MAMONAS ASSASSINAS', 'MATANZA',
-                             'SKANK', 'SEPULTURA', 'RPM', 'ROUPA NOVA', 'ROBERTO CARLOS', 'RITA LEE', 'RAUL SEXIAS',
-                             'RAIMUNDOS', 'PLEBE RUDE',
-                             'PITTY', 'PEDRA LETICIA', 'PATU FU', 'NENHUM DE NOS', 'NANDO REIS'
+                    lista = ['ANGRA', 'ARNALDO ANTUNES', 'BARAO VERMELHO',
+'BIQUINI CAVADAO', 'CACHORRO GRANDE', 'CAPITAL INICIAL', 'CASCAVELLETES',
+'CASSIA ELLER', 'CAZUZA', 'CHARLIE BROWN', 'CPM 22', 'DETONAUTAS', 'FREJAT', 'IRA',
+'JOTA QUEST', 'KID ABELHA', 'LEGIAO URBANA', 'LOS HERMANOS', 'LOBAO', 'LULU SANTOS',
+'MAMONAS ASSASSINAS', 'MATANZA', 'SKANK', 'SEPULTURA', 'RPM', 'ROUPA NOVA', 
+'ROBERTO CARLOS', 'RITA LEE', 'RAUL SEXIAS', 'RAIMUNDOS', 'PLEBE RUDE', 'PITTY',
+'PEDRA LETICIA', 'PATU FU', 'NENHUM DE NOS', 'NANDO REIS'
                              ]
                     return choice(lista)
 
@@ -63,12 +60,11 @@ def menu_escolha(categoria_jogo):
                     print('Palavra secreta selecionada:\nBoa sorte\n')
                     sleep(0.5)
 
-                    lista = ['ASTON MARTIN', 'AUDI', 'BMW', 'CHERRY', 'CHEVROLET', 'CITROEN', 'FERRARI', 'FIAT',
-                             'FORD', 'HONDA', 'HYUNDAI', 'JAGUAR', 'JEEP', 'KIA', 'LAMBORGHINI', 'HYUNDAI',
-                             'LAND ROVER', 'MCLAREN',
-                             'MERCEDES BENZ', 'MITSUBISHI', 'NISSAN', 'PEUGEOT', 'PORSCHE', 'RENAULT', 'SUBARU',
-                             'SUZUKI', 'TOYOTA', 'VOLKSWAGEN',
-                             'VOLVO'
+                    lista = ['ASTON MARTIN', 'AUDI', 'BMW', 'CHERRY', 'CHEVROLET',
+'CITROEN', 'FERRARI', 'FIAT', 'FORD', 'HONDA', 'HYUNDAI', 'JAGUAR', 'JEEP', 'KIA', 
+'LAMBORGHINI', 'HYUNDAI', 'LAND ROVER', 'MCLAREN', 'MERCEDES BENZ', 'MITSUBISHI', 
+'NISSAN', 'PEUGEOT', 'PORSCHE', 'RENAULT', 'SUBARU', 'SUZUKI', 'TOYOTA', 
+'VOLKSWAGEN', 'VOLVO'
                              ]
                     return choice(lista)
 
@@ -127,7 +123,8 @@ while condicao_while == 0:
         print('\nDigite apenas uma letra')
         continue
 
-    # Armazena cada caracter encontrado na palavra secreta, na variavel letras acertadas
+    # Armazena cada caracter encontrado na palavra secreta, na variavel letras
+    #  acertadas
     for letra_secreta in palavra_secreta:
         if letra in letra_secreta:
             sleep(0.7)
@@ -142,7 +139,8 @@ while condicao_while == 0:
         else:
             print('#', end='')
 
-    # Consome uma vida do usuário caso ele erre alguma letra, finaliza o jogo se não tiver mais vidas
+    # Consome uma vida do usuário caso ele erre alguma letra, finaliza o jogo se 
+    # não tiver mais vidas
     if letra not in palavra_secreta:
         vidas -= 1
         sleep(0.7)
@@ -171,7 +169,8 @@ while condicao_while == 0:
                     break
 
                 else:
-                    print("Digite [S] para continuar\nDigite [N] para encerrar o programa")
+                    print("Digite [S] para continuar\nDigite [N] para encerrar o \
+                          programa")
 
     # Verificação de vitória
     espacos = palavra_secreta.count(' ')

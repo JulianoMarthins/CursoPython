@@ -65,10 +65,10 @@ print('\nObrigado por usar\n')
 
 
 """
-    Faça um programa que receba o nome do usuário
-    Crie um laço de repetição while onde execute mesmo número de caracteres do nome digitado pelo
-    usuário
-    dentro do while, adicione a outra variavel letra por letra do nome digitado pelo usuário
+        Faça um programa que receba o nome do usuário
+        Crie um laço de repetição while onde execute mesmo número de caracteres do 
+    nome digitado pelo usuário dentro do while, adicione a outra variavel letra 
+    por letra do nome digitado pelo usuário
 
 """
 

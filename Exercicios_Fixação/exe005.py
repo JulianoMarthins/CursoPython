@@ -1,6 +1,6 @@
 """
-    Faça um programa que pergunte a hora ao usuário e, baseando-se no horário descrito,
-    exiba a saudação com bom dia, boa tarde ou boa noite
+        Faça um programa que pergunte a hora ao usuário e, baseando-se no horário 
+    descrito, exiba a saudação com bom dia, boa tarde ou boa noite
 
     # Bom dia   =>  8 às 11
     # Boa tarde =>  12 às 17

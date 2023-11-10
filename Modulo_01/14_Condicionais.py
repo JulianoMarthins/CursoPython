@@ -1,6 +1,7 @@
 """
-    Constantemente em um programa de computação existe a necessidade de desviarmos
-    o caminho, realizar checagens, isso se faz com a palavra chave, if, elif e else
+        Constantemente em um programa de computação existe a necessidade de 
+    desviarmos o caminho, realizar checagens, isso se faz com a palavra chave, 
+    if, elif e else
 
     if -> se
     else -> se não
@@ -11,9 +12,10 @@
     O bloco de código do elif será executado se sua consição for verdadeira, porem
     se a condição do primeiro if for falsa.
 
-    Um bloco condicional é sempre iniciado pelo if, finalizado pelo else, você pode crirar mais condicionais
-    sendo esta chamada de elif, o codigo será checado uma condicao por vez e encerrará todas as checagens 
-    quando achar o primeiro True do bloco de código
+    Um bloco condicional é sempre iniciado pelo if, finalizado pelo else, você pode 
+    crirar mais condicionais sendo esta chamada de elif, o codigo será checado uma 
+    condicao por vez e encerrará todas as checagens quando achar o primeiro True 
+    do bloco de código
 
 """
 

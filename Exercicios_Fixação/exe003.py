@@ -30,7 +30,7 @@ if nome:
         print('\nSeu nome contém espaços')
         print('Quantidade de caracteres com espaços:', len(nome))
         nome_sem_espacos = nome.replace(' ', '')
-        print('Quantidade de caracteres sem espaços:', len(nome_sem_espaços) )
+        print('Quantidade de caracteres sem espaços:', len(nome_sem_espacos) )
     else:
         print('\nSeu não contém espaços')
         

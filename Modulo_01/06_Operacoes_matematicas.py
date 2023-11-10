@@ -1,10 +1,10 @@
 """
-    Matemática na programaçõa e um os pilares, não exatamente o ato de realizar contas
-    mas sim, a lógica utilizada para resolver os problemas matemáticos são os mesmos
-    que usaremos na programação
+        Matemática na programaçõa e um os pilares, não exatamente o ato de 
+    realizar contas mas sim, a lógica utilizada para resolver os problemas 
+    matemáticos são os mesmos que usaremos na programação
 
-    Veja a similariedade do conta matemática abaixo e a mesma conta sendo atribuida a uma
-    variavel
+        Veja a similariedade do conta matemática abaixo e a mesma conta 
+    sendo atribuida a uma variavel
 
     Matemática
     X = (2 + 1) * (4 + 3)
@@ -33,10 +33,12 @@ print(f'Subtração = {subtracao}')
 multiplicacao = 10 * 10 # retorno sempre será do tipo primitovo float
 print(f'Multiplicação = {multiplicacao}')
 
-divisao = 10 / 2.2 # divisao simples, retorna um número float, não pode dividir por zero
+# divisao simples, retorna um número float, não pode dividir por zero
+divisao = 10 / 2.2 
 print(f'Divisão = {divisao}')
 
-divisao_inteira = 10 // 2.2 # retorna somente o valor inteiro da divisão, esten caso, 5
+# retorna somente o valor inteiro da divisão, esten caso, 5
+divisao_inteira = 10 // 2.2 
 print(f'Resto inteiro da divisão = {divisao_inteira}')
 
 potencia = 2 ** 3
