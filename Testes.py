@@ -1,33 +1,38 @@
 print('\n')
-
-cardapio = [
-    ('cachorro_quente', 100, 1.20),
-    ('bauru_simples', 101, 1.30),
-    ('bauru_ovo', 102, 1.50),
-    ('haburguer', 103, 1.20),
-    ('cheeseburguer', 104, 1.30),
-    ('refrigerente', 105, 1.00),
+ 
+vendas = [
+    ['maçã', 5],
+    ['banana', 15],
+    ['azeite', 1],
+    ['vinho', 3],
 ]
 
-preco = 0
-lista_produtos = []
+produtos = []
 
 while True:
-    codigo = int(input('código do produto: '))
 
-    for produto in cardapio:
-        if codigo in produto:
-            nome, codigo, valor = produto
-            lista_produtos.append(nome)
-            preco += valor
-    if codigo == 0:
-        print('Pedido finalizado')
+    nome = input('Nome do produto: ')
+
+    if not nome:
+        print('Programa será fechado')
         break
+    
+    quantidade = input('Unidades: ')
+ 
+    produtos.append(nome)
+    produtos.append(quantidade)
 
-print('\nPedido: ')
-for name in lista_produto:
-    print(name)
-print(f'Valor a pagar: {preco:.2f}')
+    vendas.append(produtos)
+    produtos.clear()
 
+print('Lista de produtos')
+
+
+for prod in vendas:
+
+    nome = prod[0]
+    quantidade = prod[1]
+
+    print(f'Produto: {nome} {quantidade} unds')
 
 print('\n')
