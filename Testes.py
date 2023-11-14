@@ -18,3 +18,17 @@ print('Indice do menor elemento: {}'.format(indice_menor))
 print()
 for indice, valor in enumerate(valores):
     print(f'{indice}: {valor}')
+
+
+nome = 'Ricardo'
+print(nome)
+
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+    
+pessoa = Pessoa('Juliano', 41)
+
+print(pessoa)
+
