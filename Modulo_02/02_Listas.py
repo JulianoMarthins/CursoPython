@@ -65,6 +65,7 @@ print(numeros)
 numeros.insert(1, 5)
 print(numeros)
 
+numeros.append(1300)
 
                     # VERIFICAÇÕES NAS LISTAS
 
