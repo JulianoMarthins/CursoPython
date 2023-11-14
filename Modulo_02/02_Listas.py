@@ -23,7 +23,7 @@
     Vejamos abaixo alguns exemplos de códigos usando listas
 """
 
-
+                    # CRIAÇÃO DE UMA LISTA
 
 # O jeito mais comum de declararmos uma lista é utilizando colchetes
 numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
@@ -33,33 +33,104 @@ print(numeros)
 numeros[2] = 300
 print(numeros)
 
+
+                    # DELETAR ELEMENTOS DE UMA LISTA
 # Com o comando del, excluíremos o valor passado como índice
 del numeros[2]
-print(numeros)
-
-# Adicionando um valor ao final da lista
-numeros.append(72)
 print(numeros)
 
 # Apaga o ultimo elemento da lista
 numeros.pop()
 print(numeros)
 
-# Adiciona o valor ao final da lista, pode ser misturados tipos primitivos nas listas
-numeros.append('BBB')
+# O pop tabém pode apagar passando o indice como parâmetro
+# Não há obrigatóriedade, mas o item removido também pode ser armazenado em uma
+# variavel
+removido = numeros.pop(2)
+print(f'Item removido da lista: {removido}')
+
+# Remove o elemento passado no argumento, no caso, remove o elemento 90
+numeros.remove(90)
+
+                    # ADICIONAR ELEMENTOS A LISTA
+
+# Adicionando um valor ao final da lista
+numeros.append(72)
 print(numeros)
 
-# insere o valor 5 no index 1
+
+
+# O comando insert serve para colocar um valor no meio da lista por meio da
+# indexação.
 numeros.insert(1, 5)
 print(numeros)
 
+
+                    # VERIFICAÇÕES NAS LISTAS
+
+# Verificar indice do elemento passado como argumento, na lista
+indice = numeros.index(1300)
+print(f'Indice do valor 1300: {indice}')
+
+
+
+                    # TRATAMENTOS DE LISTA, VALORES MAIORES E MENORES
+
+# Retorna o maior elemento da lista, em caso de string, retorna o a última palavra
+# da lista pela ordem alfabética
+maior = max(numeros)
+print(f'Maior valor da lista: {maior}')
+
+# Retorna o menor elemento da lista, em caso de string, retorna a primeira palavra
+# da lista pela ordem alfabética
+menor = min(numeros)
+print(f'Menor valor da lista: {menor}')
+
+# Retorna quantos elementos tem na lista
+quantidade = len(numeros)
+print(quantidade)
+
+# Pegar o indice do maior elemento da lista
+indice_maior = numeros.index(max(numeros))
+# Obviamente, para acessar o menor valor da lista, basta substituir o metodo max()
+# pelo metodo min()
+
+
+                    # EXEMPLO DE ITERAÇÃO DE UMA LISTA COM FOR
 # Exemplo de for para percorrer todos os elementos da lista
 for x in numeros:
     print(x)
 
-# Apagará toda sua lista
+                    # DELETAR TODOS OS ELEMENTOS DA LISTA
+
+#   Apagará todos os elementos da lista, deixando ela vazia
 numeros.clear()
 
+# Lista vazia
+print(numeros)
+
+
+                 # EXEMPLOS DE FINALIZAÇÃO DE AULA
+
+print('\n')
+valores = [10, 30, 90, 7, 42, 71]
+
+maximo = max(valores)
+menor = min(valores)
+
+
+indice_maior = valores.index(max(valores))
+indice_menor = valores.index(min(valores))
+
+print('Maior elemento da lista: {}'.format(maximo))
+print('Menor elemento da lista: {}'.format(menor))
+
+print('Indice do maior elemento: {}'.format(indice_maior))
+print('Indice do menor elemento: {}'.format(indice_menor))
+
+print()
+for indice, valor in enumerate(valores):
+    print(f'{indice}: {valor}')
 
 """
                 Reforço de conteúdo
@@ -81,5 +152,3 @@ if numeros:
 else:
     pass
 
-# Lista vazia
-print(numeros)
