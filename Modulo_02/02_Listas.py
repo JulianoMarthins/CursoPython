@@ -34,6 +34,7 @@ numeros[2] = 300
 print(numeros)
 
 
+
                     # DELETAR ELEMENTOS DE UMA LISTA
 # Com o comando del, excluíremos o valor passado como índice
 del numeros[2]
@@ -51,6 +52,8 @@ print(f'Item removido da lista: {removido}')
 
 # Remove o elemento passado no argumento, no caso, remove o elemento 90
 numeros.remove(90)
+
+
 
                     # ADICIONAR ELEMENTOS A LISTA
 

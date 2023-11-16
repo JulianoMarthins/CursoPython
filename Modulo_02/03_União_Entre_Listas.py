@@ -91,3 +91,42 @@ precos.sort()
 
 for i in range(len(produto)):
     print('Curso: {} Preço :R$ {:.2f}'.format(produto[i], precos[i]))
+
+
+                    # Modificações de lista "JOIN"
+
+consoles = [
+    'Atari 2600', 'Nintendo', 'Master System', 'Mega Drive', 'Super Nintendo',
+    'Nintendo 64', 'Playstation', 'Game Cube', 'Dreamcast', 'Nintendo DS', 
+    'Xbox', 'Nintendo Switch', 'PSP' 
+]
+
+# O comando .join acresenta algum caracter previamente definido como separador entre
+# cada elemento da lista. Ele recebe o valor a ser alterado, para depois entrar com
+# o metodo .join, sendo em seu parâmetro, passado a lista a ser tratada
+
+print()
+
+# No código abaixo, cada elemento da lista, será adicionado o comando \n, uma
+# quebra de linha, isso a cada elemento encontrado na lista
+print('\n'.join(consoles))
+
+print()
+
+# Outro exemplo é a adição de um novo caracter, desta vez, adicionaremos o #
+print(' # '.join(consoles))
+
+
+                   # Modificações de listas, "split"
+
+print()
+nomes = 'Juliano, Thiele, Larissa, Clair, Regina, Eduardo, Gabriel, Tiago'
+
+# O metodo split, recebe como argumento um caracter separador, no caso, usaremos
+# a ",". O metodo retornara uma lista e a cada vez encontrado o caracter passado
+# como o argumento, criando assim, uma lista com seus valores conforme exemplo
+# abaixo.
+
+lista = nomes.split(', ')
+
+print(lista)
