@@ -1,33 +1,12 @@
 print()
 
-valores = [10, 30, 90, 7, 42, 71]
+dicionario = {
+    'nome': 'Juliano',
+    'cpf': '01164336045'
+}
 
-maximo = max(valores)
-menor = min(valores)
+for chave, valor in dicionario.items():
+    print('{}: {}'.format(chave, valor))
 
+dicionario['nome'] = 'Thiele'
 
-indice_maior = valores.index(max(valores))
-indice_menor = valores.index(min(valores))
-
-print('Maior elemento da lista: {}'.format(maximo))
-print('Menor elemento da lista: {}'.format(menor))
-
-print('Indice do maior elemento: {}'.format(indice_maior))
-print('Indice do menor elemento: {}'.format(indice_menor))
-
-print()
-for indice, valor in enumerate(valores):
-    print(f'{indice}: {valor}')
-
-
-nome = 'Ricardo'
-print(nome)
-
-class Pessoa:
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
-    
-pessoa = Pessoa('Juliano', 41)
-
-print(pessoa)
