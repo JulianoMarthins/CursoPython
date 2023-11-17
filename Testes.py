@@ -1,12 +1,12 @@
 print()
 
-dicionario = {
-    'nome': 'Juliano',
-    'cpf': '01164336045'
-}
+dicionario = dict()
+lista = list()
+tupla = tuple()
+set_list = set()
 
-for chave, valor in dicionario.items():
-    print('{}: {}'.format(chave, valor))
 
-dicionario['nome'] = 'Thiele'
-
+print('Dicionario: ', type(dicionario))
+print('Lista: ', type(lista))
+print('Tupla: ', type(tupla))
+print('Lista Set: ', type(set_list))
