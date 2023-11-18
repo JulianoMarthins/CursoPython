@@ -25,4 +25,3 @@ print(retorno_funcao)
 # unico e exclusivo aquela função, não sendo possivel acessa-la fora da função, 
 # logo, se tentarmos usar a variavel soma em um trecho de código fora da função, 
 # o programa lançará uma excessão alegando não existir a variavel com este nome
-
