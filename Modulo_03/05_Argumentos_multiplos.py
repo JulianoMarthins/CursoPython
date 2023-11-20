@@ -51,3 +51,4 @@ valor = preco_final(1000, desconto=0.1) # Passando um argumento posicional, reto
 
 valor = preco_final(1000, desconto=0.1, imposto=0.20) # Passando dois arugmentos posicionais, retorno: 1080,00
 print(valor)
+
