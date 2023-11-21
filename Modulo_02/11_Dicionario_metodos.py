@@ -80,7 +80,7 @@ print(valores)
 # deverá ser feito um casting dos valores contidos nas variaveis chaves e valores
 # convertendo a "lista" retornada pelo dicionário por uma lista comum
 print()
-vendas_tecnologia['julianos phone'] = 20
+vendas_tecnologia['julianus phone'] = 20
 print(chaves, '\n')
 print(valores)
 

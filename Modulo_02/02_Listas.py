@@ -52,7 +52,7 @@ print(f'Item removido da lista: {removido}')
 
 # Remove o elemento passado no argumento, no caso, remove o elemento 90
 numeros.remove(90)
-
+print('Teste remoção pelo remove', numeros)
 
 
                     # ADICIONAR ELEMENTOS A LISTA
