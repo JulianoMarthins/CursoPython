@@ -1,9 +1,10 @@
 print()
 
+import time
+import locale
 
-lista = {'juliano': 4 }
-lista['thieles'] = 4
+locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
+tempo_segundos = time.time()
+tempo_local = time.ctime(tempo_segundos)
 
-
-for chave, valor in lista.items():
-    print(chave, valor)
+print(f'Tempo local: {tempo_local}')
