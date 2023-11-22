@@ -1,10 +1,8 @@
 print()
 
 import time
-import locale
 
-locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
-tempo_segundos = time.time()
-tempo_local = time.ctime(tempo_segundos)
+tempo_local = time.ctime(time.time())
 
 print(f'Tempo local: {tempo_local}')
+print()
