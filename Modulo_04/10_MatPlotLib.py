@@ -19,7 +19,7 @@ plt.xlabel('Meses')
 # Linha de código abaixo apresenta erro apensar do código funcionar corretamente com a linha
 # descomentada. 
 
-# plt.axis([0, 11, 0, max(venda_mes)+500])
+#plt.axis([0, 11, 0, max(venda_mes)+500])
 
 
 # Mostra em tela o gráfico dos dados analisados

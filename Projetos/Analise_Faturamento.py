@@ -131,4 +131,3 @@ for chave in faturamento_impostos:
 plt.plot(lista_chaves, grafico_faturamento, color='green')
 
 plt.show()
-
