@@ -64,22 +64,11 @@ lista_imp_trimestral = []
 
 for mes in faturamento:
     valor = converter_para_float(faturamento[mes])
-    
-    # Condição para analise de imposto trimestral, com acrescimo dos impostos mensais desses meses.
-    if 'mar' in mes or 'jun' in mes or 'set' in mes or 'dez' in mes:
-       
-        lista_chaves.append(mes)
-        lista_faturamento.append(valor)
-        lista_imp_mensal.append(imposto_mensal(valor))
-        lista_imp_trimestral.append(imposto_trimestral(valor))
-
-    # Tratamento de impostos mensais       
-    else:
-        lista_chaves.append(mes)
-        lista_faturamento.append(valor)
-        lista_imp_mensal.append(imposto_mensal(valor))
-        lista_imp_trimestral.append(None)
-
+  
+    lista_chaves.append(mes)
+    lista_faturamento.append(valor)
+    lista_imp_mensal.append(imposto_mensal(valor))
+    lista_imp_trimestral.append(imposto_trimestral(valor))
 
 # Criação de dicionário com os valores de impostos inclusos
 faturamento_impostos = dict.fromkeys(
@@ -103,13 +92,9 @@ for chave in faturamento_impostos:
     
     vendas = float(vendas[cont])
     mensal = float(mensal[cont])
-
-    try:
-        trimestral = float(trimestral[cont])
-    except:
-        trimestral = float(0)
-    cont += 1
+    trimestral = float(trimestral[cont])
     
+    cont += 1
     chave = str(chave)
 
     print(f'Faturamento no mês de {chave.title()}')
@@ -131,3 +116,4 @@ for chave in faturamento_impostos:
 plt.plot(lista_chaves, grafico_faturamento, color='green')
 
 plt.show()
+
