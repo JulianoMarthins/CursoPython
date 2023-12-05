@@ -21,3 +21,4 @@ sleep(1)
 keyboard.write('www.youtube.com.br')
 sleep(1)
 
+keyboard.press_and_release('enter')
