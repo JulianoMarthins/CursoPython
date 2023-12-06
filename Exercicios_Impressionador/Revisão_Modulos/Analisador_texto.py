@@ -33,15 +33,14 @@ def analisar_texto(args):
 
     lista_palavras = []
     lista_letras = []
-    contagem = 0
-
+    
     for palavras in args:
         lista_palavras.append(palavras)
 
         for letras in palavras:
             lista_letras.append(letras)
-        contagem += 1
-    
+            
+    contagem = len(lista_palavras)
     palavras = Counter(lista_palavras)
     letras = Counter(lista_letras)
     
