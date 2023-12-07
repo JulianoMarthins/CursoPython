@@ -1,15 +1,6 @@
 print()
+lista = [('Juliano', 'Martins', 'Souza')]
 
-import string
-from random import choice, shuffle
+var = [(nome, lastName) for nome, midName, lastName in lista]
 
-
-
-# print(string.punctuation) # Caracteres especiais
-# print(string.digits) # todos os números
-
-# print(string.ascii_letters) # todas as letras, maiuscula e minusculas do afabeto
-
-escolha = choice(string.ascii_letters)
-
-print(escolha)
+print(var)
