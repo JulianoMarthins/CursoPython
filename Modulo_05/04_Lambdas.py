@@ -57,7 +57,63 @@ print('Lista de produtos atulizada usando a função map:\n{}'.format(produtos_2
 
 # Abaixo, apenas uma demonstrção do que o map retorna caso não seja convertido
 print()
+
 produto_3 = map(padronizar_texto, produtos_2)
 print('Demostração do tipo de retorno do map: {}'.format(type(produto_3)))
 
 print()
+
+# Uma observação importante é sobre o uso do sort ou do sorted como função para uma
+# expressão lambda, até agora no programa, usamos várias vezes a função .sort() para
+# ordenar listas. Mas o método sort tem um parâmetro que nunca usamos e que agora,
+# com o uso das expressões lambdas, sera útil.
+
+produtos = [
+    'apple tv', 'mac', 'Iphone x', 'iphone 11', 'ipad', 'apple wathc', 'mac book',
+    'airport', 'xbox series x', 'playstation 5', 'guitarra cort', 'amp marshall'
+]
+
+# A ordenação do comando .sort() não representa que ele colocará em ordem alfabética,
+# na verdade ele utilzia a tabla 'ASCII' para realizara sua ordenação, ela nada mais
+# é do que código que representam a ordem em que as letras serão consideradas para a
+# ordenação, nesta tabela, tem prioridades ao números, em segundo lugar as letras 
+# maiúsculas pra só depois as letras minúsculas. Sendo assim, a palavra 'Camelo' seria
+# inserida na frente da palavra 'anaconta'. Sendo assim analisado, precisamos tratar
+# todos os elementos da lista deixando todos eles com letras minusculas ou maiusculas,
+# deixando assim, possível realizar a ordenação dos valres da lista devidamente em 
+# ordenação alfabética
+
+# Abaixo, passamos como parâmetro para a função sort, a chave "KEY" recebendo a
+# função str.casefold, que passa todas as palavras para letras minúsculas.
+produtos.sort(key=str.casefold)
+print('Nova lista de produtos {}'.format(produtos))
+
+print()
+
+venda_produtos = {
+    'vinho' : 100,
+    'vafeteira': 150,
+    'microondas': 300,
+    'iphone': 5500
+}
+
+# Abaixo, retornamos a variavel uma tupla de cada elemento do dicinoário
+def segund_item(args):
+    return args[1]
+
+lista_vendas = list(venda_produtos.items())
+
+# Para realizar a ordenação em um dicionário, primeiro deveremos converte-lo conforme
+# código acima, para uma lista de tuplas onde, cada elemento chave valor do
+# dicionário será uma tupla.
+
+# Foi criada uma função que básicamente retorna o elemento 1 da tupla, neste caso, 
+# foi retornado o valor de venda, já que a chave seria o nome do produto.
+
+# No código abaixo é passado a função que criamos no parâmetro do .sort() com
+# o adicional de reverse=True, que ordena a lista do maior para o menor, ou, em 
+# outras palavras, de trás pra frente.
+
+lista_vendas.sort(key=segund_item, reverse=True)
+
+print(dict(lista_vendas))
