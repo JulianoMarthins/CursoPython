@@ -26,5 +26,5 @@ def gerar_senha(args):
 
  
 tamanho = int(input("Digite o comprimento da senha: "))
-
+print()
 print(gerar_senha(tamanho))
