@@ -1,10 +1,5 @@
-print()
+import pandas as pd
 
+vendas_df = pd.read_csv(r'D:\WorkSpace\Python\Python_Impressionador\Pandas\Contoso - Vendas - 2017.csv', sep=';')
 
-lista = [5, 7, 4, 3, 6, 7, 8]
-
-porcentagem = 10 / sum(lista)
-
-print('Porcentagem: {:.2%}'.format(porcentagem))
-
-print()
+print(vendas_df)
