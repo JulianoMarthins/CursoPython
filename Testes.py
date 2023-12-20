@@ -1,5 +1,14 @@
 import pandas as pd
 
-vendas_df = pd.read_csv(r'D:\WorkSpace\Python\Python_Impressionador\Pandas\Contoso - Vendas - 2017.csv', sep=';')
+produtos_df = pd.read_csv(
+    r'D:\\WorkSpace\\Python\\Python_Impressionador\\Pandas\\Contoso - Cadastro Produtos.csv', sep=';', encoding='cp1252'
+    )
 
-print(vendas_df)
+print(produtos_df)
+
+"""
+* encoding='Latin1'
+            * encoding='ISO-8859-1'
+            * encoding='utf-8'
+            * encoding='cp1252'
+            """
