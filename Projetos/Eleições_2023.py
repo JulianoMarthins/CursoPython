@@ -42,8 +42,7 @@ while contador > 0:
             continue
         case _:
             print('Candidato inexistente')
-
-    
+   
             
 print('\n')
 

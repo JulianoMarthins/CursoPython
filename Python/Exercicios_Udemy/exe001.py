@@ -13,11 +13,10 @@ altura = 1.96
 
 print('Nome:', nome)
 print('Sobrenome:', sobrenome)
+print('Nome Completo:', nome + ' ' + sobrenome)
 print('Idade:', idade)
 print('Ano de nascimento:', ano_nascimento)
 print('É maior de idade?', maior_idade)
 print('Altura:', altura)
-
-
 
 print('\n')
