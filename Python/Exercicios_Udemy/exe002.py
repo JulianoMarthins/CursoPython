@@ -4,7 +4,7 @@
 print('\n')
 
 altura = float(input('Altura: '))
-peso = int(input('Peso:'))
+peso = float(input('Peso: '))
 imc = peso / (altura * altura)
 
 print(f'IMC: {imc:.2f}')
